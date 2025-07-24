@@ -67,6 +67,8 @@
 .fresh{
     max-width: 1140px;
     padding: 0px 150px;
+    display: flex;
+    margin-bottom: 120px;
 }
 .fresh-flowers{
     display: flex;
@@ -84,6 +86,90 @@
     width: 100%;
     height: 355px;
 }
+/* our plant */
+
+/* Section wrapper */
+.our-plants {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Container */
+.plants-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.section-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid Layout */
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 270px); /* 4 columns */
+  grid-auto-rows: 484.94px;                /* each card height */
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Individual Cards */
+.plant-card {
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.plant-card img {
+  width: 270px;
+  height: 322.94px;
+  margin-bottom: 10px;
+}
+
+.plant-card .lilly-bloosom {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.plant-card .usd{
+    font-weight: bold;
+    margin-top: -20px;
+    font-size: 1.3rem;
+}
+.plant-card .btn-primary a{
+    text-decoration: none;
+    color: white;
+}
+.plant-card button {
+  background: rgba(233, 90, 8, 1);;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: none;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+
 /* media responsive navbar */
 @media screen and (max-width: 500px) {
     .header{
@@ -108,18 +194,88 @@
     text-align: center;
   }
   /* fresh-section */
-  .fresh-flowers{
+  .fresh{
+    width: 393px;
     display: flex;
     flex-direction: column-reverse;
   }
-  .fresh-flowers-description{
+  .description{
     width: 361px;
-    height: 147px;
+    height: 66px;
   }
   .description-img img{
-    width: 393.245px;
+    width: 393px;
     height: 245px;
-    
   }
-  
+  .fresh-flowers-headers{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: -100px;
+  }
+  /* our plants */
+  .our-plants{          
+  width: 393px;
+  margin-left: 110px;                
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+}
+.section-description{
+    width: 336px;
+    height: 68px;
+}
+
+.plant-grid {
+  display: grid;            
+  grid-template-columns: repeat(2, 171px); 
+  justify-content: center;
+   row-gap: 10px; /* 🔻 only 20px vertical gap between rows */
+  column-gap: 15px;
+   
+}
+
+.plant-card {
+  width: 171px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  gap: 6px;
+}
+
+.plant-card img {
+  width: 171px;
+  height: 196.5px;
+  object-fit: cover;
+}
+
+.plant-card .lilly-bloosom {
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: -100px;
+  margin-bottom: -50px;
+}
+
+.plant-card .usd {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: -80px;
+}
+
+.plant-card button {
+  font-size: 1rem;
+  width: 100%;
+  padding: 8px 0;
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: -100px;
+}
 }
