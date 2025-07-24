@@ -1,0 +1,59 @@
+.noto-serif-noto {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.inter-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.header{
+    max-width: 1140px;
+    max-height: 71px;
+    padding: 10px 150px;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.nav-link a{
+    text-decoration: none;
+}
+.home a{
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+.shop a{
+    font-size: medium;
+    font-weight: 400;
+    color: rgba(137, 135, 161, 1);
+}
+.about a{
+    font-size: medium;
+    font-weight: 400;
+    color: rgba(137, 135, 161, 1);
+}
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart a{
+    font-size: medium;
+    font-weight: 400;
+    color: rgb(32, 32, 37);
+}
+.cart img{
+    width: 24px;
+    height: 24px;
+}
