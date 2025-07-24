@@ -171,6 +171,7 @@
 .plants{
     width: 1140px;
     padding-left: 130px;
+    margin-bottom: 133px;
 }
 .plants-lover{
  display: flex;
@@ -223,57 +224,72 @@
     font-size: 1.2rem; 
     text-align: left;
 }
-
+/* latest details */
 .latest-details {
-  padding: 50px 20px;
+    width: 1140px;
+  padding: 0 150px;
   text-align: center;
 }
-
-.section-header h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #222;
+.latest-section-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-header p {
-  font-size: 18px;
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto 40px auto;
+.latest-section-header-title{
+  font-size: 3.1rem;
+  margin-bottom: 10px;
+}
+
+.latest-section-header-details{
+  font-size: 1.4rem;
+  width: 888px;
+  height: 54px;
+  color: rgba(0, 0, 0, 0.5);
+  
 }
 
 .image-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-}
-
-.left-images {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.right-image {
-  display: flex;
   align-items: center;
+  padding-right: 60px;
+  gap: 25px;
 }
-
-.image-box {
+.left-images{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.image-box-left{
   position: relative;
-  width: 280px;
-  height: 380px;
+  width: 361px;
+  height: 201px;
   overflow: hidden;
   border-radius: 10px;
 }
 
-.image-box img {
-  width: 100%;
-  height: 100%;
+.image-box-left img {
+  width: 361px;
+  height: 201px;
   object-fit: cover;
   display: block;
-  border-radius: 10px;
+  border-radius: 14px;
+  filter: brightness(50%) contrast(100%);
+
+
+}
+.image-box-right{
+  position: relative;
+  width: 753px;
+  height: 423px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+.image-box-right img{
+    border-radius: 14px;
+    filter: brightness(50%) contrast(100%);
 }
 
 .overlay {
@@ -282,40 +298,48 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 20px;
-  background: rgba(0,0,0,0.4); /* semi-transparent overlay */
+  padding-top: 60px;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
 }
 
 .overlay .discount {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
-.overlay .bloom {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.overlay .shop-now {
+.overlay .shop-now{
   margin-top: 10px;
-  background: #fff;
-  color: #000;
-  text-decoration: none;
+  color: white;
   padding: 8px 16px;
   border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.discount-zabo{
+    margin-top: 90px;
+    font-size: 2.25rem;
   font-weight: bold;
-  transition: background 0.3s;
+}
+.shop-now-zabo{
+   font-size: 1.75rem;
+   font-weight: 500;
+   color: white; 
+}
+.overlay .shop-now-zabo{
+  margin-top: 10px;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
 }
 
-.overlay .shop-now:hover {
-  background: #f4c542;
+.shop-now, .shop-now-zabo:hover {
+  background: #61563a;
 }
 
 
@@ -468,4 +492,80 @@
   .right-side p {
     font-size: 14px;
   }
+  /* latest details */
+   .latest-details {
+    width: 100%;
+    padding-left: 95px;
+    text-align: center;
+  }
+
+  .latest-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latest-section-header-title {
+    font-size: 1.5rem;
+  }
+
+  .latest-section-header-details {
+    width: 336px;
+    height: 68px;
+    font-size: 0.9rem;
+    padding-left: 10px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 80px;
+  }
+
+  .left-images,
+  .right-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .image-box-left,
+  .image-box-right {
+    width: 361px !important;
+    height: 172px !important;
+  }
+
+  .image-box-left img,
+  .image-box-right img {
+    width: 361px !important;
+    height: 171px !important;
+    object-fit: cover;
+  }
+
+    .overlay {
+    padding-top: 30px;
+    justify-content: flex-start;
+  }
+
+  .discount-zabo {
+    margin-top: 30px;
+    font-size: 1.25rem;
+  }
+
+  .shop-now-zabo {
+    font-size: 1rem;
+  }
+
+  .overlay .discount {
+    font-size: 1.25rem;
+  }
+
+  .overlay .shop-now {
+    font-size: 1rem;
+    padding: 5px 12px;
+  }
+
 }
