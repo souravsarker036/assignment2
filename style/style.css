@@ -14,6 +14,7 @@
     max-width: 1140px;
     max-height: 71px;
     padding: 10px 150px;
+    margin-bottom: 120px;
 }
 .nav-items{
     display: flex;
@@ -24,6 +25,11 @@
     display: flex;
     align-items: center;
     gap: 48px;
+}
+.nav-link .home,
+.nav-link .shop,
+.nav-link .about {
+  display: block; 
 }
 .nav-link a{
     text-decoration: none;
@@ -56,4 +62,64 @@
 .cart img{
     width: 24px;
     height: 24px;
+}
+/* always fresh flower */
+.fresh{
+    max-width: 1140px;
+    padding: 0px 150px;
+}
+.fresh-flowers{
+    display: flex;
+}
+.fresh-flowers-headers{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.fresh-flowers-description{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.description-img{
+    width: 100%;
+    height: 355px;
+}
+/* media responsive navbar */
+@media screen and (max-width: 500px) {
+    .header{
+        width: 361px;
+        height: 38px;
+    }
+  .nav-link .home,
+  .nav-link .shop,
+  .nav-link .about {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  /* fresh-section */
+  .fresh-flowers{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .fresh-flowers-description{
+    width: 361px;
+    height: 147px;
+  }
+  .description-img img{
+    width: 393.245px;
+    height: 245px;
+    
+  }
+  
 }
