@@ -229,6 +229,7 @@
     width: 1140px;
   padding: 0 150px;
   text-align: center;
+  margin-bottom: 120px;
 }
 .latest-section-header{
     display: flex;
@@ -341,6 +342,66 @@
 .shop-now, .shop-now-zabo:hover {
   background: #61563a;
 }
+/* subscribe section */
+.subscribe-section {
+  width: 1440px;
+  height: 533px;
+  background-image: url('../B12A02-Responsive-Flowers/assets/news-letter-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+}
+
+.overlay-content-title {
+  font-size: 3.125rem;
+  margin-bottom: 23px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+  width: 830px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0 20px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  width: 644px;
+  height: 50px;
+  color: #333;
+}
+
+.subscribe-form button {
+  padding: 14px 25px;
+  font-size: 1rem;
+  border: none;
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  width: 186px;
+  height: 51px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #e04b4b;
+}
+
 
 
 /* media responsive navbar */
@@ -567,5 +628,60 @@
     font-size: 1rem;
     padding: 5px 12px;
   }
+ .subscribe-section {
+  width: 100%;
+  max-width: 500px;
+  height: 275px;
+   margin: 0 auto;
+
+  background-image: url('../B12A02-Responsive-Flowers/assets/news-letter-bg.png');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 100px;
+  margin-top: -80px;
+ 
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.overlay-content-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.subscribe-form {
+  width: 100%;
+  max-width: 321px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 2;
+  height: 50px;
+  font-size: 1rem;
+  padding: 0 10px;
+  border: none;
+}
+
+.subscribe-form button {
+  flex: 1;
+  height: 50px;
+  font-size: 1rem;
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
 }
